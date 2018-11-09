@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QSlider" name="lydSlider">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>0</y>
+      <width>22</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFil">
+    <property name="title">
+     <string>Fil</string>
+    </property>
+    <addaction name="actionopenFile"/>
+   </widget>
+   <widget class="QMenu" name="menuVideo">
+    <property name="title">
+     <string>Video</string>
+    </property>
+    <addaction name="actionPlayBtn"/>
+    <addaction name="actionpauseBtn"/>
+    <addaction name="actionstopBtn"/>
+   </widget>
+   <addaction name="menuFil"/>
+   <addaction name="menuVideo"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopenFile"/>
+   <addaction name="actionPlayBtn"/>
+   <addaction name="actionpauseBtn"/>
+   <addaction name="actionstopBtn"/>
+   <addaction name="actionLyd"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionopenFile">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/new/images/Icons/folder.png</normaloff>:/new/images/Icons/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Åben fil</string>
+   </property>
+   <property name="toolTip">
+    <string>Åben fil</string>
+   </property>
+  </action>
+  <action name="actionPlayBtn">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/new/images/Icons/play-button.png</normaloff>:/new/images/Icons/play-button.png</iconset>
+   </property>
+   <property name="text">
+    <string>Afspil</string>
+   </property>
+   <property name="toolTip">
+    <string>Afspil</string>
+   </property>
+  </action>
+  <action name="actionstopBtn">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/new/images/Icons/stop.png</normaloff>:/new/images/Icons/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="toolTip">
+    <string>stop</string>
+   </property>
+  </action>
+  <action name="actionLyd">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/new/images/Icons/speaker_medVol.png</normaloff>:/new/images/Icons/speaker_medVol.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lyd</string>
+   </property>
+   <property name="toolTip">
+    <string>Lyd</string>
+   </property>
+  </action>
+  <action name="actionpauseBtn">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/new/images/Icons/pause.png</normaloff>:/new/images/Icons/pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="toolTip">
+    <string>Pause</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

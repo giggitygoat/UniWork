@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/new/images">
+        <file>Icons/folder.png</file>
+        <file>Icons/pause.png</file>
+        <file>Icons/play-button.png</file>
+        <file>Icons/stop.png</file>
+        <file>Icons/volume.png</file>
+        <file>Icons/mute.png</file>
+        <file>Icons/speaker_highVol.png</file>
+        <file>Icons/speaker_lowVol.png</file>
+        <file>Icons/speaker_medVol.png</file>
+        <file>Icons/expand.png</file>
+    </qresource>
+</RCC>
